@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="right"
+        android:background="@drawable/background_bar"
+        android:gravity="center"
+        app:layout_anchor="@+id/toolbar"
+        app:layout_anchorGravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/backHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_back_college" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="الملف الشخصي"
+                android:textColor="#000"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/progress_circular"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="181dp"
+                        android:layout_marginLeft="181dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="182dp"
+                        android:layout_marginRight="182dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edit_user_image" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/edit_user_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="147dp"
+                        android:layout_marginLeft="147dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="144dp"
+                        android:layout_marginRight="144dp"
+                        android:src="@drawable/profiel_defiult"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="80dp"
+                        app:layout_constraintEnd_toEndOf="@+id/edit_user_image"
+                        app:layout_constraintStart_toStartOf="@+id/edit_user_image"
+                        app:layout_constraintTop_toTopOf="@+id/edit_user_image"
+                        app:srcCompat="@drawable/ic_menu_camera" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <EditText
+                    android:id="@+id/edit_user_name"
+                    android:layout_width="360dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/backgroung_input"
+                    android:drawableRight="@drawable/ic_user"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="أدخل الأسم الجديد"
+                    android:inputType="textPersonName"
+                    android:paddingRight="10dp"
+                    android:textColor="#A6BCD0"
+                    android:textColorHint="#A6BCD0"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="35dp"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/saveChange"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:drawableRight="@drawable/ic_save"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/rounded_button_save"
+                        android:text="حفظ" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="2dp"
+                    android:background="#7E401B"/>
+
+                <EditText
+                    android:id="@+id/editTextCurrentPassword"
+                    android:layout_width="360dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/backgroung_input"
+                    android:drawableRight="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:paddingRight="10dp"
+                    android:ems="10"
+                    android:gravity="center|right"
+                    android:hint="@string/current_password"
+                    android:inputType="textPassword"
+                    android:textColor="#A6BCD0"
+                    android:textColorHint="#A6BCD0"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/newPassword"
+                    android:layout_width="360dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/backgroung_input"
+                    android:drawableRight="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:paddingRight="10dp"
+                    android:ems="10"
+                    android:gravity="right|center"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword"
+                    android:textColor="#A6BCD0"
+                    android:textColorHint="#A6BCD0"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/newPasswordConf"
+                    android:layout_width="360dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/backgroung_input"
+                    android:drawableRight="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:paddingRight="10dp"
+                    android:ems="10"
+                    android:gravity="right|center"
+                    android:hint="@string/new_password_conf"
+                    android:inputType="textPassword"
+                    android:textColor="#A6BCD0"
+                    android:textColorHint="#A6BCD0"
+                    android:textSize="16dp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_circular_pass"
+                    android:layout_width="40dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_user_image" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingHorizontal="35dp"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/saveChangePassword"
+                        android:layout_width="100dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_height="35dp"
+                        android:drawableRight="@drawable/ic_save"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/rounded_button_save"
+                        android:text="حفظ" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateAccount">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="509dp"
+                android:layout_height="698dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/background_register"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    app:srcCompat="@drawable/logo_app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/create_account"
+                    android:textColor="#F8D58F"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:id="@+id/CreateAccountStudentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/icon_back_button"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="95dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/background_button"
+                    android:text="@string/create_account_student"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/CreateAccountEmployButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:drawableLeft="@drawable/icon_back_button"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="95dp"
+                    android:background="@drawable/background_button"
+                    android:text="@string/create_account_employ"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/LoginTextCreateAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/login"
+                    android:textColor="#A6BCD0"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

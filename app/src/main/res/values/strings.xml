@@ -1,0 +1,46 @@
+<resources>
+    <string name="login">تسجيل الدخول</string>
+    <string name="user_number">رقم المستخدم</string>
+    <string name="user_password">كلمة المرور</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="new_password_conf">تأكيد كلمة المرور</string>
+    <string name="user_CPassword">تأكيد كلمة المرور</string>
+
+    <string name="forget_password">نسيت كلمة المرور؟</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="create_account_student">إنشاء حساب طالب</string>
+    <string name="create_account_employ">إنشاء حساب موظف</string>
+    <string name="saveChange">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="student_number">الرقم الجامعي</string>
+    <string name="student_name">إسم الطالب</string>
+    <string name="employ_name">إسم الموظف</string>
+    <string name="name">الأسم</string>
+    <string name="employ_number">الرقم الوظيفي</string>
+    <string name="user_no">ا00000000</string>
+
+    <string name="app_name">IsraaNow</string>
+
+    <string name="nav_header_title">ماجد حسين</string>
+    <string name="nav_header_subtitle">majed_houssen</string>
+
+    <string name="menu_home">الرئيسية</string>
+    <string name="menu_eventR">فعاليات جارية</string>
+    <string name="menu_eventN">فعاليات قادمة</string>
+    <string name="event_archive">الأرشيف</string>
+    <string name="menu_favorite">المفضلة</string>
+    <string name="menu_college">الكليات</string>
+    <string name="menu_notification">الإشعارات</string>
+    <string name="menu_share">مشاركة التطبيق</string>
+    <string name="menu_aboutUs">من نحن ؟</string>
+    <string name="menu_signOut">تسجيل الخروج</string>
+
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fcm_message">title</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+</resources>

@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ps.edu.israaNow.ui.About_us.AboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="111dp"
+                android:layout_marginLeft="111dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:layout_marginRight="111dp"
+                android:src="@drawable/logo_app" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/about_us_shape"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="عن التطبيق"
+                    android:textColor="#7E401B"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/describtionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="viewStart"
+                    android:textColor="#7E401B"
+                    android:textSize="16dp"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/about_us_shape"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Developed by: Majed Houssen"
+                    android:textColor="#7E401B"
+                    android:textSize="16dp"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

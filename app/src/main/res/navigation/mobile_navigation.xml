@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ps.edu.israaNow.ui.Home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="ps.edu.israaNow.ui.Home.HomeFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_running_event"
+        android:name="ps.edu.israaNow.ui.RunningEvent.RunningEventFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_running_event" />
+
+    <fragment
+        android:id="@+id/nav_coming_event"
+        android:name="ps.edu.israaNow.ui.ComingEvent.ComingEventsFragment"
+        android:label="@string/menu_eventN"
+        tools:layout="@layout/fragment_coming_event" />
+
+    <fragment
+        android:id="@+id/nav_archive_event"
+        android:name="ps.edu.israaNow.ui.FinishedEvents.FinishedEvents"
+        android:label="@string/event_archive"
+        tools:layout="@layout/fragment_finished_events" />
+
+    <fragment
+        android:id="@+id/nav_fav"
+        android:name="ps.edu.israaNow.ui.Favriote.FavrioteFragment"
+        android:label="@string/menu_favorite"
+        tools:layout="@layout/fragment_favriote" />
+
+    <fragment
+        android:id="@+id/nav_college"
+        android:name="ps.edu.israaNow.ui.College.CollegeFragment"
+        android:label="@string/menu_college"
+        tools:layout="@layout/fragment_college" />
+
+    <fragment
+    android:id="@+id/nav_notification"
+    android:name="ps.edu.israaNow.ui.Notification.NotificationFragment"
+    android:label="@string/menu_notification"
+    tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="ps.edu.israaNow.ui.About_us.AboutUsFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_about_us" />
+
+</navigation>

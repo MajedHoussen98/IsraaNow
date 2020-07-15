@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "530183325529",
+    "firebase_url": "https://israanow-e180e.firebaseio.com",
+    "project_id": "israanow-e180e",
+    "storage_bucket": "israanow-e180e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530183325529:android:a4e741c3a5aab86f69ae48",
+        "android_client_info": {
+          "package_name": "ps.edu.israaNow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530183325529-a4bn35ag0do1mncd4r34dost6evpsevr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVaYuwJnbKKSlPXT1vqU387SkoLKp6St8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530183325529-a4bn35ag0do1mncd4r34dost6evpsevr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

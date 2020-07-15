@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/ll_notification"
+    android:padding="16dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/background_notification"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 AM"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_notification_time"
+            app:layout_constraintStart_toEndOf="@+id/notification_time"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="2dp" />
+
+        <TextView
+            android:id="@+id/college_name_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="الهندسة ونظم المعلومات"
+            app:layout_constraintEnd_toStartOf="@+id/college_image_notification"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/college_image_notification"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/event_title_notification"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="4dp"
+        android:text="عنوان الفعالية"
+        android:textColor="#000"
+        android:textSize="17.2sp"
+        app:layout_constraintEnd_toStartOf="@+id/college_image_notification"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
